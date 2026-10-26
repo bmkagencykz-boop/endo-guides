@@ -13,12 +13,12 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231F4ED0%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
 <title>Эндо-гайды Курбанбека</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="14 гайдов по эндодонтии для врача у кресла: алгоритмы, протоколы, готовые фразы для пациента. Шынгыс Нургалиевич Курбанбек, эндодонтист с 9-летним стажем.">
+<meta name="description" content="14 гайдов по эндодонтии для врача у кресла: что делать при отломе файла, если не берёт анестезия, при боли после лечения. Шынгыс Нургалиевич Курбанбек, эндодонтист с 9-летним стажем.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: первый экран — фото врача на фоне в синем, дальше коротко: польза, 14 гайдов сеткой, цена. Синий из самих гайдов */
+/* Layout: фото врача + оффер → ситуации врача → настоящие страницы крупно → список гайдов → автор → цена. Синий из гайдов */
 :root{
   --blue:#1F4ED0;
   --blue-d:#0B1D4A;
@@ -28,6 +28,7 @@
   --ink:#0F172A;
   --ink-2:#475569;
   --paper:#FFFFFF;
+  --cloud:#F4F7FD;
   --line:#E2E8F0;
   --mute:#94A3B8;
   --wa:#22C55E;
@@ -46,81 +47,105 @@ button{font:inherit;color:inherit}
 p,h1,h2,h3{margin:0}
 h1,h2,h3{text-wrap:balance}
 .wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.sec{padding-block:30px 6px}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.h2{font-size:clamp(22px,6vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:6px 0 16px}
 
-/* кнопка WhatsApp */
-.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;background:var(--wa);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 12px 28px rgba(34,197,94,.35);transition:transform .2s var(--ease),background .2s}
+/* кнопки */
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;background:var(--wa);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 12px 28px rgba(34,197,94,.35);transition:transform .2s var(--ease),background .2s}
 .wa:hover{background:#16A34A;transform:translateY(-1px)}
 .wa:active{transform:scale(.98)}
 .wa svg{flex:0 0 20px}
+.ghost{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;text-decoration:none;color:#C7D3F2}
+.ghost::after{content:"↓";color:var(--orange)}
 
-/* HERO: фото врача на фоне */
+/* HERO */
 .hero{position:relative;color:#fff;background:var(--blue-d) url("img/doctor.webp") 50% 0/100% auto no-repeat;display:flex;flex-direction:column}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,20,51,.25) 0,rgba(7,20,51,0) 18vw,rgba(11,29,74,.1) 48vw,rgba(11,29,74,.92) 82vw,#0B1D4A 100vw)}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,20,51,.25) 0,rgba(7,20,51,0) 18vw,rgba(11,29,74,.1) 46vw,rgba(11,29,74,.92) 78vw,#0B1D4A 96vw)}
 @media (min-width:860px){
-  .hero{background-position:right center;background-size:auto 100%;min-height:620px;background-color:var(--blue-d)}
-  .hero::before{background:linear-gradient(90deg,#0B1D4A 0%,#0B1D4A 42%,rgba(11,29,74,.75) 58%,rgba(11,29,74,0) 80%)}
+  .hero{background-position:right center;background-size:auto 100%;min-height:600px}
+  .hero::before{background:linear-gradient(90deg,#0B1D4A 0%,#0B1D4A 44%,rgba(11,29,74,.7) 60%,rgba(11,29,74,0) 82%)}
 }
 .hero > *{position:relative}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px}
-.brand{font-weight:800;font-size:13px;letter-spacing:.04em}
+.brand{font-weight:800;font-size:13px;letter-spacing:.04em;white-space:nowrap}
 .brand i{font-style:normal;color:#8FB0FF}
-.top a{font-size:13px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 14px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.hero-in{margin-top:56vw;padding-block:0 34px;display:grid;gap:14px;max-width:560px}
-@media (min-width:860px){.hero-in{margin-top:0;padding-block:56px 64px}}
-.tag{justify-self:start;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#BFD0FF;background:rgba(31,78,208,.35);border:1px solid rgba(143,176,255,.35);border-radius:999px;padding:6px 12px}
-h1{font-size:clamp(32px,8.6vw,54px);font-weight:800;line-height:1.02;letter-spacing:-.03em}
+.top a{font-size:13px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 14px;white-space:nowrap;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.hero-in{margin-top:52vw;padding-block:0 30px;display:grid;gap:13px;max-width:580px}
+@media (min-width:860px){.hero-in{margin-top:0;padding-block:52px 60px}}
+.tag{justify-self:start;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#BFD0FF;background:rgba(31,78,208,.35);border:1px solid rgba(143,176,255,.35);border-radius:999px;padding:6px 12px}
+h1{font-size:clamp(27px,7.6vw,46px);font-weight:800;line-height:1.06;letter-spacing:-.025em}
 h1 em{font-style:normal;color:#8FB0FF}
-.sub{font-size:16.5px;color:#D6E0FA;max-width:30em}
-.doc{display:grid;gap:3px;padding:12px 14px;border-left:3px solid var(--orange);background:rgba(255,255,255,.06);border-radius:0 12px 12px 0}
-.doc b{font-size:15.5px;font-weight:800}
-.doc span{font-size:13px;color:#C7D3F2}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.stats div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:10px 10px 9px}
-.stats strong{display:block;font-size:clamp(22px,6vw,30px);font-weight:800;line-height:1;letter-spacing:-.02em}
-.stats span{display:block;margin-top:4px;font-size:11px;color:#C7D3F2;line-height:1.25}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
-.cta .price{font-size:14px;color:#C7D3F2}
-.cta .price b{display:block;font-size:24px;color:#fff;font-weight:800;line-height:1}
+.sub{font-size:15.5px;color:#D6E0FA;max-width:32em}
+.doc{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.doc img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:35% 30%;flex:0 0 44px;border:2px solid rgba(255,255,255,.35)}
+.doc b{display:block;font-size:14.5px;font-weight:800}
+.doc span{display:block;font-size:12px;color:#C7D3F2;line-height:1.35}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.price{font-size:13px;color:#C7D3F2;line-height:1.25}
+.price b{display:block;font-size:26px;color:#fff;font-weight:800;letter-spacing:-.02em}
 
-/* ПОЛЬЗА */
-.why{padding-block:34px 10px}
-.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
-.h2{font-size:clamp(22px,6vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:6px 0 16px}
-.benefits{display:grid;gap:10px}
-@media (min-width:760px){.benefits{grid-template-columns:repeat(4,1fr)}}
-.ben{border-radius:18px;background:var(--blue-soft);padding:16px}
-.ben i{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--blue);color:#fff;font-style:normal;font-weight:800;font-size:15px}
-.ben h3{font-size:15.5px;font-weight:800;margin:10px 0 4px;line-height:1.25}
-.ben p{font-size:13.5px;color:var(--ink-2)}
+/* СИТУАЦИИ */
+.cases{display:grid;gap:8px}
+@media (min-width:760px){.cases{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}}
+.case{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start;border:1px solid var(--line);border-radius:16px;padding:13px 14px;background:var(--paper)}
+.case i{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--blue-soft);color:var(--blue);font-style:normal;font-weight:800;font-size:12px}
+.case b{display:block;font-size:15px;line-height:1.3}
+.case span{display:block;margin-top:4px;font-size:13.5px;color:var(--ink-2);line-height:1.4}
+.case span em{font-style:normal;color:var(--blue);font-weight:700}
 
-/* 14 ГАЙДОВ */
-.inside{padding-block:30px 10px}
-.guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px}
-@media (min-width:640px){.guides{grid-template-columns:repeat(5,minmax(0,1fr))}}
-@media (min-width:960px){.guides{grid-template-columns:repeat(7,minmax(0,1fr))}}
-.g{border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:6px;align-content:start;min-width:0}
-.g span{position:relative;display:block;aspect-ratio:1/1.414;border-radius:8px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 8px 18px rgba(15,23,42,.12);transition:transform .3s var(--ease)}
-.g:hover span{transform:translateY(-3px)}
-.g img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
-.g span::after{content:attr(data-n);position:absolute;left:6px;top:6px;font-size:9.5px;font-weight:800;color:#fff;background:var(--blue);border-radius:5px;padding:2px 5px}
-.g b{font-size:11.5px;line-height:1.25;font-weight:700}
-.g small{font-size:10.5px;color:var(--mute);font-weight:600}
-.hint{margin-top:12px;font-size:12.5px;color:var(--mute)}
+/* НАСТОЯЩИЕ СТРАНИЦЫ */
+.peek{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:none;overscroll-behavior-x:contain}
+.peek::-webkit-scrollbar{display:none}
+.pk{flex:0 0 min(84%,380px);scroll-snap-align:start;border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:8px}
+.pk span{display:block;border-radius:12px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 16px 34px rgba(15,23,42,.14);background:#fff}
+.pk img{display:block;width:100%;height:auto}
+.pk b{font-size:13.5px}
+.pk small{display:block;font-size:12px;color:var(--mute);font-weight:600}
+.dots{display:flex;gap:6px;justify-content:center}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:all .3s}
+.dots i.on{background:var(--blue);width:20px;border-radius:4px}
+
+/* СПИСОК ГАЙДОВ */
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:1px solid var(--line)}
+@media (min-width:640px){.list{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px}}
+.list li{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.list li i{font-style:normal;font-weight:800;color:var(--blue);font-size:12.5px}
+.list li small{color:var(--mute);font-weight:600;font-size:12px;white-space:nowrap}
+.listnote{margin-top:10px;font-size:13px;color:var(--ink-2)}
+
+/* АВТОР */
+.author{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:center;background:var(--cloud);border-radius:20px;padding:16px}
+.author img{width:84px;height:84px;border-radius:18px;object-fit:cover;object-position:35% 30%}
+.author b{display:block;font-size:16px;font-weight:800;line-height:1.25}
+.author span{display:block;font-size:13px;color:var(--ink-2);margin-top:3px}
+.author a{display:inline-block;margin-top:6px;font-size:13px;font-weight:700;color:var(--blue);text-decoration:none}
 
 /* ЦЕНА */
 .buy{margin-top:30px;background:var(--blue-d);color:#fff}
-.buy .wrap{padding-block:30px 34px;display:grid;gap:16px}
-@media (min-width:860px){.buy .wrap{grid-template-columns:1fr auto;align-items:center;gap:30px}}
-.buy h2{font-size:clamp(22px,6vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.buy .wrap{padding-block:28px 32px;display:grid;gap:16px}
+@media (min-width:860px){.buy .wrap{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:30px}}
+.buy h2{font-size:clamp(21px,5.6vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
 .buy ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
-.buy li{display:grid;grid-template-columns:22px 1fr;gap:6px;font-size:14.5px;color:#D6E0FA}
+.buy li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:6px;font-size:14.5px;color:#D6E0FA}
 .buy li::before{content:"✓";color:var(--orange);font-weight:800}
-.pbox{display:grid;gap:12px;justify-items:start}
+.pbox{display:grid;gap:10px;justify-items:start}
 @media (min-width:860px){.pbox{justify-items:end;text-align:right}}
-.pbox strong{font-size:clamp(42px,12vw,58px);font-weight:800;letter-spacing:-.03em;line-height:1}
-.pbox .kz{font-size:16px;font-weight:700;color:#C7D3F2;margin-top:-6px}
-.pbox .after{font-size:12.5px;color:#AFC0EA;max-width:22em}
-.foot{padding-block:16px 90px;font-size:11.5px;color:var(--mute);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.pbox strong{font-size:clamp(40px,11vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1}
+.pbox .kz{font-size:16px;font-weight:700;color:#C7D3F2}
+.pbox .worth{font-size:13px;color:#FCD34D;font-weight:600}
+.pbox .after{font-size:12.5px;color:#AFC0EA;max-width:24em}
+.ask{font-size:13px;color:#C7D3F2;text-decoration:none;border-bottom:1px dashed rgba(199,211,242,.5)}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:13px 32px 13px 0;font-weight:700;position:relative;font-size:14.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:2px;top:8px;font-weight:500;font-size:22px;color:var(--blue);transition:transform .3s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 13px;font-size:14px;color:var(--ink-2)}
+.foot{padding-block:18px 92px;font-size:11.5px;color:var(--mute);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 @media (min-width:860px){.foot{padding-bottom:18px}}
 
 /* нижняя кнопка на телефоне */
@@ -133,8 +158,8 @@ h1 em{font-style:normal;color:#8FB0FF}
 @media (min-width:860px){.dock{display:none}}
 
 /* просмотр страниц */
-.lb{position:fixed;inset:0;z-index:60;background:rgba(7,20,51,.94);display:grid;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) 14px calc(70px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s}
-.lb img{max-width:min(100%,520px);max-height:100%;border-radius:8px;background:#fff}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(7,20,51,.95);display:grid;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) 10px calc(70px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s}
+.lb img{max-width:min(100%,640px);max-height:100%;border-radius:8px;background:#fff}
 .lb button{position:absolute;border:0;border-radius:50%;width:46px;height:46px;background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer}
 .lb .lx{top:calc(12px + env(safe-area-inset-top,0px));right:14px}
 .lb .lp{left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
@@ -143,8 +168,8 @@ h1 em{font-style:normal;color:#8FB0FF}
 
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.hero-in > *{animation:up .7s var(--ease) both}
-.hero-in > *:nth-child(2){animation-delay:.06s}.hero-in > *:nth-child(3){animation-delay:.12s}.hero-in > *:nth-child(4){animation-delay:.18s}.hero-in > *:nth-child(5){animation-delay:.24s}.hero-in > *:nth-child(6){animation-delay:.3s}
+.hero-in > *{animation:up .6s var(--ease) both}
+.hero-in > *:nth-child(2){animation-delay:.05s}.hero-in > *:nth-child(3){animation-delay:.1s}.hero-in > *:nth-child(4){animation-delay:.15s}.hero-in > *:nth-child(5){animation-delay:.2s}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -154,64 +179,110 @@ h1 em{font-style:normal;color:#8FB0FF}
 <header class="hero" id="top">
   <div class="wrap top">
     <span class="brand">ENDO <i>GUIDES</i></span>
-    <a href="#buy">5 000 ₽</a>
+    <a href="#buy">5 000 ₽ · 27 000 ₸</a>
   </div>
   <div class="wrap hero-in">
-    <span class="tag">Для стоматологов-терапевтов и эндодонтистов</span>
-    <h1>Эндодонтия <em>без&nbsp;сюрпризов</em></h1>
-    <p class="sub">14 гайдов у кресла: алгоритмы, протоколы и готовые фразы для пациента. Открыл, нашёл свою ситуацию, сделал.</p>
-    <div class="doc"><b>Шынгыс Нургалиевич Курбанбек</b><span>Эндодонтист, терапевт, микрохирург, пародонтолог · 9 лет практики</span></div>
-    <div class="stats">
-      <div><strong>14</strong><span>гайдов в PDF</span></div>
-      <div><strong>132</strong><span>страницы со схемами</span></div>
-      <div><strong>9</strong><span>лет клинической практики</span></div>
+    <span class="tag">Для стоматологов-терапевтов</span>
+    <h1>Отломился файл, не&nbsp;берёт анестезия, болит после лечения? <em>Открыл гайд — сделал по шагам.</em></h1>
+    <p class="sub">14 гайдов по эндодонтии у кресла: алгоритмы, протоколы и готовые фразы для пациента. 132 страницы.</p>
+    <div class="doc">
+      <img src="img/doctor.webp" alt="Шынгыс Нургалиевич Курбанбек" width="640" height="640">
+      <div><b>Шынгыс Нургалиевич Курбанбек</b><span>Эндодонтист, терапевт, микрохирург, пародонтолог · 9 лет практики</span></div>
     </div>
-    <div class="cta">
-      <a class="wa" href="https://wa.me/77761611678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B0%D0%BF%D0%BA%D1%83%20%D1%8D%D0%BD%D0%B4%D0%BE-%D0%B3%D0%B0%D0%B9%D0%B4%D0%BE%D0%B2%20%D0%B7%D0%B0%205%20000%20%E2%82%BD%20/%2027%20000%20%E2%82%B8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
+    <div class="buyrow">
+      <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
       <span class="price">вся папка<b>5 000 ₽</b>или 27 000 ₸</span>
     </div>
+    <a class="ghost" href="#peek">Посмотреть страницы гайдов</a>
   </div>
 </header>
 
 <main>
-  <!-- ПОЛЬЗА -->
-  <section class="wrap why">
-    <p class="eyebrow">Почему это удобно</p>
-    <h2 class="h2">Не учебник. Решения для приёма.</h2>
-    <div class="benefits">
-      <div class="ben"><i>1</i><h3>Ответ за минуту</h3><p>Одна ситуация — одна карточка: шаги, сроки, когда направлять.</p></div>
-      <div class="ben"><i>2</i><h3>Протоколы на стену</h3><p>Ирригация, обтурация, коффердам: схема на одной странице у кресла.</p></div>
-      <div class="ben"><i>3</i><h3>Готовые фразы</h3><p>Что сказать при осложнении, боли после лечения и на «дорого».</p></div>
-      <div class="ben"><i>4</i><h3>По доказательной базе</h3><p>Классификация AAE, рекомендации ESE, данные систематических обзоров.</p></div>
+  <!-- СИТУАЦИИ -->
+  <section class="wrap sec">
+    <p class="eyebrow">Узнаёте себя?</p>
+    <h2 class="h2">6 ситуаций, где гайд экономит время и нервы</h2>
+    <div class="cases">
+      <div class="case"><i>01</i><div><b>Отломился файл или перфорация</b><span>Алгоритм «стоп, оценить, задокументировать, сообщить», карта осложнений: срочность и <em>когда направлять</em>.</span></div></div>
+      <div class="case"><i>04</i><div><b>«Горячий» моляр, анестезия не берёт</b><span>Почему блок не работает, <em>дополнительные техники по шагам</em> и расчёт доз по весу.</span></div></div>
+      <div class="case"><i>02</i><div><b>Не нашли MB2 или «лишний» канал</b><span>Карточка на каждый зуб: сколько каналов, <em>где искать устья</em>, типичные ошибки.</span></div></div>
+      <div class="case"><i>12</i><div><b>Пациент звонит с болью на следующий день</b><span>Что норма, а что обострение, что назначить и <em>готовые фразы</em>, после которых нет паники.</span></div></div>
+      <div class="case"><i>08</i><div><b>Перелечивать, оперировать или удалять</b><span>Критерии выбора, распломбировка гуттаперчи, штифтов и <em>резорцин-формалина</em>.</span></div></div>
+      <div class="case"><i>14</i><div><b>Пациент: «дорого, лучше удалить»</b><span>Консультация в 7 этапов: <em>как назвать цену</em>, чтобы пациент выбрал лечение.</span></div></div>
     </div>
   </section>
 
-  <!-- 14 ГАЙДОВ -->
-  <section class="wrap inside" id="inside">
-    <p class="eyebrow">Что внутри</p>
-    <h2 class="h2">14 гайдов от диагностики до консультации</h2>
-    <div class="guides" id="guides"></div>
-    <p class="hint">Нажмите на обложку, чтобы посмотреть страницы.</p>
+  <!-- НАСТОЯЩИЕ СТРАНИЦЫ -->
+  <section class="wrap sec" id="peek">
+    <p class="eyebrow">Загляните внутрь</p>
+    <h2 class="h2">Настоящие страницы. Листайте, нажмите, чтобы увеличить</h2>
+    <div class="peek" id="peekRow">
+      <button class="pk" type="button"><span><img src="img/show/complications.webp" alt="Страница: карта осложнений в эндо" width="800" height="1131"></span><b>Осложнения в эндо</b><small>карта: срочность и куда направлять</small></button>
+      <button class="pk" type="button"><span><img src="img/show/irrigation.webp" alt="Страница: протокол ирригации на одной странице" width="800" height="1131" loading="lazy"></span><b>Протокол ирригации</b><small>постер на стену у кресла</small></button>
+      <button class="pk" type="button"><span><img src="img/show/pain.webp" alt="Страница: нормальная боль после лечения" width="800" height="1131" loading="lazy"></span><b>Боль после лечения</b><small>норма, обострение и что сказать</small></button>
+      <button class="pk" type="button"><span><img src="img/show/anatomy.webp" alt="Страница: анатомия каналов" width="800" height="1131" loading="lazy"></span><b>Анатомия каналов</b><small>карточка на каждый зуб</small></button>
+      <button class="pk" type="button"><span><img src="img/show/consult.webp" alt="Страница: консультация в 7 этапов" width="800" height="1131" loading="lazy"></span><b>Консультация и цена</b><small>7 этапов до «да»</small></button>
+    </div>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <!-- ВСЕ 14 -->
+  <section class="wrap sec">
+    <p class="eyebrow">Что в папке</p>
+    <h2 class="h2">14 гайдов, 132 страницы</h2>
+    <ul class="list">
+      <li><i>01</i><span>Осложнения в эндо</span><small>9 стр.</small></li>
+      <li><i>02</i><span>Анатомия каналов по каждому зубу</span><small>19 стр.</small></li>
+      <li><i>03</i><span>Диагностика пульпитов и периодонтитов</span><small>10 стр.</small></li>
+      <li><i>04</i><span>Анестезия, которая не берёт</span><small>9 стр.</small></li>
+      <li><i>05</i><span>Протокол ирригации</span><small>8 стр.</small></li>
+      <li><i>06</i><span>Шпаргалка по файловым системам</span><small>9 стр.</small></li>
+      <li><i>07</i><span>Обтурация: какой метод когда</span><small>9 стр.</small></li>
+      <li><i>08</i><span>Перелечивание и распломбировка</span><small>10 стр.</small></li>
+      <li><i>09</i><span>Витальные методы: пульпотомия, MTA</span><small>9 стр.</small></li>
+      <li><i>10</i><span>Восстановление после эндо</span><small>8 стр.</small></li>
+      <li><i>11</i><span>Повязки и временные пломбы</span><small>8 стр.</small></li>
+      <li><i>12</i><span>Боль после лечения</span><small>8 стр.</small></li>
+      <li><i>13</i><span>Коффердам за 5 минут</span><small>8 стр.</small></li>
+      <li><i>14</i><span>Консультация, цена и возражения</span><small>8 стр.</small></li>
+    </ul>
+    <p class="listnote">Опора на классификацию AAE, рекомендации ESE и систематические обзоры. Формат A4: распечатать и держать у кресла или открыть с телефона.</p>
+  </section>
+
+  <!-- АВТОР -->
+  <section class="wrap sec">
+    <div class="author">
+      <img src="img/doctor.webp" alt="Шынгыс Нургалиевич Курбанбек за микроскопом" width="640" height="640" loading="lazy">
+      <div><b>Шынгыс Нургалиевич Курбанбек</b><span>Эндодонтист, терапевт, микрохирург, пародонтолог. 9 лет практики, лечит под микроскопом.</span><a href="https://www.instagram.com/shyngyskurbanbek/" target="_blank" rel="noopener">Instagram @shyngyskurbanbek ›</a></div>
+    </div>
   </section>
 
   <!-- ЦЕНА -->
   <section class="buy" id="buy">
     <div class="wrap">
       <div>
-        <h2>Вся папка: 14 гайдов, 132 страницы</h2>
+        <h2>Вся папка: 14 гайдов по эндодонтии</h2>
         <ul>
-          <li>Осложнения, анатомия, диагностика, анестезия</li>
-          <li>Ирригация, файлы, обтурация, перелечивание</li>
-          <li>Витальные методы, реставрация, повязки, боль</li>
-          <li>Коффердам и консультация с ценой</li>
+          <li>132 страницы алгоритмов, протоколов и схем</li>
+          <li>Готовые фразы для пациента: осложнения, боль, цена</li>
+          <li>PDF A4: распечатать или открыть с телефона</li>
         </ul>
       </div>
       <div class="pbox">
-        <strong>5 000 ₽</strong><span class="kz">или 27 000 ₸</span>
-        <a class="wa" href="https://wa.me/77761611678?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BF%D0%B0%D0%BF%D0%BA%D1%83%20%D1%8D%D0%BD%D0%B4%D0%BE-%D0%B3%D0%B0%D0%B9%D0%B4%D0%BE%D0%B2%20%D0%B7%D0%B0%205%20000%20%E2%82%BD%20/%2027%20000%20%E2%82%B8" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
-        <p class="after">После оплаты пришлём ссылку на папку на Google Drive. PDF открываются с телефона и компьютера.</p>
+        <strong>5 000 ₽</strong>
+        <span class="kz">или 27 000 ₸</span>
+        <span class="worth">Окупится первым пациентом, который выберет лечение вместо удаления</span>
+        <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
+        <p class="after">После оплаты пришлём ссылку на папку на Google Drive.</p>
+        <a class="ask" data-wa="ask" href="https://wa.me/77761611678" target="_blank" rel="noopener">Есть вопрос? Напишите врачу</a>
       </div>
     </div>
+  </section>
+
+  <section class="wrap sec faq">
+    <details><summary>Подойдёт, если я не эндодонтист?</summary><p>Да. Гайды написаны для стоматологов-терапевтов и начинающих эндодонтистов: что делать в конкретной ситуации, без лишней теории.</p></details>
+    <details><summary>Мне хватает опыта. Зачем?</summary><p>Чтобы не держать всё в голове: протоколы, дозы, карта осложнений и фразы для пациента собраны в одном месте у кресла.</p></details>
+    <details><summary>Как получить папку?</summary><p>Нажмите «Купить в WhatsApp», оплатите в рублях или тенге, и вам пришлют ссылку на папку на Google Drive.</p></details>
   </section>
   <footer class="wrap foot"><span>Шынгыс Нургалиевич Курбанбек · материалы для врачей</span><span>WhatsApp +7 776 161 16 78</span></footer>
 </main>
@@ -219,7 +290,7 @@ h1 em{font-style:normal;color:#8FB0FF}
 <div class="dock" id="dock" aria-hidden="true">
   <div class="in">
     <p>5 000 ₽<span>или 27 000 ₸ · 14 гайдов</span></p>
-    <a class="wa" href="#buy" tabindex="-1">Купить</a>
+    <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener" tabindex="-1">Купить</a>
   </div>
 </div>
 
@@ -227,27 +298,21 @@ h1 em{font-style:normal;color:#8FB0FF}
 
 <script>
 (function(){
-  var GUIDES=[
-    ['01','Осложнения в эндо',9],['02','Анатомия каналов по каждому зубу',19],['03','Диагностика пульпитов и периодонтитов',10],
-    ['04','Анестезия, которая не берёт',9],['05','Протокол ирригации',8],['06','Шпаргалка по файловым системам',9],
-    ['07','Обтурация: какой метод когда',9],['08','Перелечивание и распломбировка',10],['09','Витальные методы: пульпотомия, MTA',9],
-    ['10','Восстановление после эндо',8],['11','Повязки и временные пломбы',8],['12','Боль после лечения',8],
-    ['13','Коффердам за 5 минут',8],['14','Консультация, цена и возражения',8]
-  ];
-  var box=document.getElementById('guides');
-  GUIDES.forEach(function(g){
-    var b=document.createElement('button');b.type='button';b.className='g';b.dataset.k=g[0];b.dataset.t=g[1];
-    b.innerHTML='<span data-n="'+g[0]+'"><img src="img/g/'+g[0]+'-1.webp" alt="Обложка: '+g[1]+'" width="420" height="594" loading="lazy"></span><b>'+g[1]+'</b><small>'+g[2]+' стр.</small>';
-    box.appendChild(b);
-  });
+  /* WhatsApp: готовый текст сообщения */
+  var MSG={buy:'Здравствуйте! Хочу купить папку эндо-гайдов за 5 000 ₽ / 27 000 ₸',ask:'Здравствуйте! У меня вопрос по эндо-гайдам'};
+  [].forEach.call(document.querySelectorAll('[data-wa]'),function(a){a.href='https://wa.me/77761611678?text='+encodeURIComponent(MSG[a.dataset.wa])});
 
-  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),list=[],cur=0,title='';
-  function show(){lbImg.src=list[cur];lbImg.alt=title+', страница '+(cur+1);lbC.textContent=title+' · '+(cur+1)+' / '+list.length}
-  function step(d){cur=(cur+d+list.length)%list.length;show()}
-  box.addEventListener('click',function(e){
-    var g=e.target.closest('.g');if(!g)return;
-    title=g.dataset.t;list=[1,2,3,4].map(function(i){return 'img/g/'+g.dataset.k+'-'+i+'.webp'});cur=0;show();lb.hidden=false;
-  });
+  /* лента настоящих страниц */
+  var row=document.getElementById('peekRow'),pks=[].slice.call(row.children),dots=[].slice.call(document.querySelectorAll('#dots i')),raf;
+  row.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){
+    var w=pks[0].getBoundingClientRect().width+12,i=Math.max(0,Math.min(pks.length-1,Math.round(row.scrollLeft/w)));
+    dots.forEach(function(d,k){d.classList.toggle('on',k===i)});
+  })},{passive:true});
+
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),cur=0;
+  function show(){var im=pks[cur].querySelector('img');lbImg.src=im.src;lbImg.alt=im.alt;lbC.textContent=pks[cur].querySelector('b').textContent+' · '+(cur+1)+' / '+pks.length}
+  function step(d){cur=(cur+d+pks.length)%pks.length;show()}
+  pks.forEach(function(p,i){p.addEventListener('click',function(){cur=i;show();lb.hidden=false})});
   document.getElementById('lbX').addEventListener('click',function(){lb.hidden=true});
   document.getElementById('lbP').addEventListener('click',function(){step(-1)});
   document.getElementById('lbN').addEventListener('click',function(){step(1)});
