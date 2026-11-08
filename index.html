@@ -4,173 +4,257 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Эндодонтия без сюрпризов · 14 гайдов">
-<meta property="og:description" content="14 гайдов по эндодонтии у кресла от Шынгыса Нургалиевича Курбанбека, эндодонтиста с 9-летним стажем. 5 000 ₽ или 27 000 ₸.">
-<meta property="og:image" content="https://bmkagencykz-boop.github.io/endo-guides/img/og-5000.jpg">
+<meta property="og:title" content="Эндодонтия у кресла · 23 PDF, 321 страница, 4 видео">
+<meta property="og:description" content="Папка эндодонтиста Шынгыса Курбанбека: 14 гайдов у кресла, 9 глубоких разборов и 4 видео. 3 990 ₽ или 21 500 ₸.">
+<meta property="og:image" content="https://bmkagencykz-boop.github.io/endo-guides/img/og-3990.jpg">
 <meta property="og:url" content="https://bmkagencykz-boop.github.io/endo-guides/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0B1D4A">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%231F4ED0%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
-<title>Эндо-гайды Курбанбека</title>
+<meta name="theme-color" content="#0E1B2C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%230E1B2C%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%23E03A3E%27/%3E%3C/svg%3E">
+<title>Эндо-библиотека Курбанбека</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="14 гайдов по эндодонтии для врача у кресла: что делать при отломе файла, если не берёт анестезия, при боли после лечения. Шынгыс Нургалиевич Курбанбек, эндодонтист с 9-летним стажем.">
+<meta name="description" content="23 PDF-материала по эндодонтии, 321 страница и 4 видео от эндодонтиста Шынгыса Курбанбека: осложнения, анатомия и устья каналов, ирригация, step-back, обтурация, боль после лечения, консультация. 3 990 ₽ или 21 500 ₸.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap">
 <style>
-/* Layout: фото врача + оффер → ситуации врача → настоящие страницы крупно → список гайдов → автор → цена. Синий из гайдов */
+/* Эндо-библиотека v4: объём на первом экране → лента обложек → состав → настоящие страницы → всё содержание по материалам → видео → ситуация→материал → кому → автор → цена */
 :root{
-  --blue:#1F4ED0;
-  --blue-d:#0B1D4A;
-  --blue-dd:#071433;
-  --blue-soft:#EAF0FF;
-  --orange:#F59E0B;
-  --ink:#0F172A;
-  --ink-2:#475569;
+  --navy:#0E1B2C;
+  --navy-2:#15263D;
+  --navy-3:#1E3350;
+  --red:#E03A3E;
+  --red-d:#C42B30;
+  --amber:#F2A93B;
+  --sand:#F6F1E8;
+  --sand-2:#EFE7DA;
   --paper:#FFFFFF;
-  --cloud:#F4F7FD;
-  --line:#E2E8F0;
-  --mute:#94A3B8;
+  --ink:#121A26;
+  --ink-2:#4A5568;
+  --mute:#8A94A6;
+  --line:#E7E1D6;
   --wa:#22C55E;
   --body:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --num:"Oswald","Montserrat",system-ui,sans-serif;
   --ease:cubic-bezier(.2,.7,.2,1);
   color-scheme:light;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
 img{max-width:100%}
 button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:4px}
-p,h1,h2,h3{margin:0}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+p,h1,h2,h3,ul,ol{margin:0}
 h1,h2,h3{text-wrap:balance}
-.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
-.sec{padding-block:30px 6px}
-.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
-.h2{font-size:clamp(22px,6vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin:6px 0 16px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.sec{padding-block:44px 8px}
+.eyebrow{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.h2{font-size:clamp(24px,6.4vw,38px);font-weight:900;letter-spacing:-.025em;line-height:1.08;margin:8px 0 10px}
+.lead{font-size:15.5px;color:var(--ink-2);max-width:40em}
+.n{font-family:var(--num);font-weight:600;letter-spacing:-.01em}
 
 /* кнопки */
-.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;background:var(--wa);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 12px 28px rgba(34,197,94,.35);transition:transform .2s var(--ease),background .2s}
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;background:var(--wa);color:#fff;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 12px 28px rgba(34,197,94,.35);transition:transform .2s var(--ease),background .2s;white-space:nowrap}
 .wa:hover{background:#16A34A;transform:translateY(-1px)}
 .wa:active{transform:scale(.98)}
 .wa svg{flex:0 0 20px}
-.ghost{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;text-decoration:none;color:#C7D3F2}
-.ghost::after{content:"↓";color:var(--orange)}
+.ghost{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;text-decoration:none;color:#C9D4E6}
+.ghost::after{content:"↓";color:var(--amber)}
 
 /* HERO */
-.hero{position:relative;color:#fff;background:var(--blue-d) url("img/doctor.webp") 50% 0/100% auto no-repeat;display:flex;flex-direction:column}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,20,51,.25) 0,rgba(7,20,51,0) 18vw,rgba(11,29,74,.1) 46vw,rgba(11,29,74,.92) 78vw,#0B1D4A 96vw)}
-@media (min-width:860px){
-  .hero{background-position:right center;background-size:auto 100%;min-height:600px}
-  .hero::before{background:linear-gradient(90deg,#0B1D4A 0%,#0B1D4A 44%,rgba(11,29,74,.7) 60%,rgba(11,29,74,0) 82%)}
+.hero{position:relative;color:#fff;background:var(--navy) url("img/doctor.webp") 50% 0/100% auto no-repeat;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,27,44,.2) 0,rgba(14,27,44,0) 16vw,rgba(14,27,44,.15) 40vw,rgba(14,27,44,.94) 70vw,var(--navy) 88vw)}
+@media (min-width:900px){
+  .hero{background-position:right center;background-size:auto 100%;min-height:660px}
+  .hero::before{background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 46%,rgba(14,27,44,.72) 62%,rgba(14,27,44,0) 84%)}
 }
 .hero > *{position:relative}
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px}
-.brand{font-weight:800;font-size:13px;letter-spacing:.04em;white-space:nowrap}
-.brand i{font-style:normal;color:#8FB0FF}
-.top a{font-size:13px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 14px;white-space:nowrap;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-.hero-in{margin-top:52vw;padding-block:0 30px;display:grid;gap:13px;max-width:580px}
-@media (min-width:860px){.hero-in{margin-top:0;padding-block:52px 60px}}
-.tag{justify-self:start;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#BFD0FF;background:rgba(31,78,208,.35);border:1px solid rgba(143,176,255,.35);border-radius:999px;padding:6px 12px}
-h1{font-size:clamp(27px,7.6vw,46px);font-weight:800;line-height:1.06;letter-spacing:-.025em}
-h1 em{font-style:normal;color:#8FB0FF}
-.sub{font-size:15.5px;color:#D6E0FA;max-width:32em}
-.doc{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:58px}
+.brand{font-weight:900;font-size:13px;letter-spacing:.06em;white-space:nowrap}
+.brand i{font-style:normal;color:var(--red)}
+.top a{font-size:13px;font-weight:700;text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 14px;white-space:nowrap;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.hero-in{margin-top:46vw;padding-block:0 34px;display:grid;gap:15px}
+.hero-in > *{max-width:600px}
+@media (min-width:900px){.hero-in{margin-top:0;padding-block:46px 64px}}
+.tag{justify-self:start;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#FFD7D8;background:rgba(224,58,62,.22);border:1px solid rgba(224,58,62,.45);border-radius:999px;padding:6px 12px}
+h1{font-size:clamp(30px,8.4vw,52px);font-weight:900;line-height:1.02;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--amber)}
+.sub{font-size:15.5px;color:#D3DCEA;max-width:34em}
+.counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.counts div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:10px 12px}
+.counts b{display:block;font-family:var(--num);font-size:clamp(30px,8.6vw,40px);font-weight:600;line-height:1;color:#fff}
+.counts span{display:block;margin-top:4px;font-size:12px;color:#B9C6DA;line-height:1.25}
+.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.price{font-size:13px;color:#C9D4E6;line-height:1.25}
+.price s{color:#8C9AB2}
+.price b{display:block;font-family:var(--num);font-size:34px;color:#fff;font-weight:600;letter-spacing:0;line-height:1.05}
+.doc{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
 .doc img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:35% 30%;flex:0 0 44px;border:2px solid rgba(255,255,255,.35)}
 .doc b{display:block;font-size:14.5px;font-weight:800}
-.doc span{display:block;font-size:12px;color:#C7D3F2;line-height:1.35}
-.buyrow{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
-.price{font-size:13px;color:#C7D3F2;line-height:1.25}
-.price b{display:block;font-size:26px;color:#fff;font-weight:800;letter-spacing:-.02em}
+.doc span{display:block;font-size:12px;color:#C9D4E6;line-height:1.35}
 
-/* СИТУАЦИИ */
-.cases{display:grid;gap:8px}
-@media (min-width:760px){.cases{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}}
-.case{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start;border:1px solid var(--line);border-radius:16px;padding:13px 14px;background:var(--paper)}
-.case i{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--blue-soft);color:var(--blue);font-style:normal;font-weight:800;font-size:12px}
-.case b{display:block;font-size:15px;line-height:1.3}
-.case span{display:block;margin-top:4px;font-size:13.5px;color:var(--ink-2);line-height:1.4}
-.case span em{font-style:normal;color:var(--blue);font-weight:700}
+/* ЛЕНТА ОБЛОЖЕК */
+.shelf{background:var(--navy);padding:6px 0 26px;overflow:hidden}
+.shelf-row{display:flex;gap:12px;width:max-content;animation:roll 70s linear infinite}
+.shelf:hover .shelf-row{animation-play-state:paused}
+.shelf img{display:block;height:130px;width:auto;border-radius:8px;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+@media (min-width:900px){.shelf img{height:160px}}
+@keyframes roll{to{transform:translateX(-50%)}}
+.shelf-cap{margin-top:14px;text-align:center;font-size:12.5px;color:#9FB0C8;font-weight:600}
+
+/* СОСТАВ */
+.parts{display:grid;gap:10px;margin-top:16px}
+@media (min-width:820px){.parts{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.part{border-radius:22px;padding:18px;background:var(--sand);display:grid;gap:8px;align-content:start}
+.part.dark{background:var(--navy);color:#fff}
+.part.red{background:var(--red);color:#fff}
+.part b.n{font-size:44px;line-height:1}
+.part h3{font-size:17px;font-weight:800;line-height:1.2}
+.part p{font-size:13.5px;line-height:1.45;color:var(--ink-2)}
+.part.dark p,.part.red p{color:rgba(255,255,255,.82)}
+.part small{font-size:12px;font-weight:700;opacity:.75}
+.value{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+.value span{font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:#fff}
+.value span b{color:var(--red)}
 
 /* НАСТОЯЩИЕ СТРАНИЦЫ */
-.peek{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:none;overscroll-behavior-x:contain}
+.peek{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px;margin-top:14px;scrollbar-width:none;overscroll-behavior-x:contain;align-items:flex-start}
 .peek::-webkit-scrollbar{display:none}
-.pk{flex:0 0 min(84%,380px);scroll-snap-align:start;border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:8px}
-.pk span{display:block;border-radius:12px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 16px 34px rgba(15,23,42,.14);background:#fff}
-.pk img{display:block;width:100%;height:auto}
-.pk b{font-size:13.5px}
+.pk{--h:clamp(160px,46vw,340px);flex:0 0 auto;width:calc(var(--h) * var(--r,1.414));scroll-snap-align:start;border:0;padding:0;background:none;text-align:left;cursor:zoom-in;display:grid;gap:8px}
+.pk span{display:block;height:var(--h);border-radius:12px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 16px 34px rgba(18,26,38,.16);background:#fff}
+.pk img{display:block;height:100%;width:100%;object-fit:cover}
+.pk b{font-size:13.5px;font-weight:800}
 .pk small{display:block;font-size:12px;color:var(--mute);font-weight:600}
-.dots{display:flex;gap:6px;justify-content:center}
-.dots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:all .3s}
-.dots i.on{background:var(--blue);width:20px;border-radius:4px}
+.peeknav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.dots{display:flex;gap:5px;flex-wrap:wrap}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--line);transition:all .3s}
+.dots i.on{background:var(--red);width:18px;border-radius:4px}
+.arrows{display:flex;gap:8px}
+.arrows button{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:18px;font-weight:700}
+.arrows button:hover{border-color:var(--ink)}
 
-/* СПИСОК ГАЙДОВ */
-.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:1px solid var(--line)}
-@media (min-width:640px){.list{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px}}
-.list li{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
-.list li i{font-style:normal;font-weight:800;color:var(--blue);font-size:12.5px}
-.list li small{color:var(--mute);font-weight:600;font-size:12px;white-space:nowrap}
-.listnote{margin-top:10px;font-size:13px;color:var(--ink-2)}
+/* ВСЁ СОДЕРЖАНИЕ */
+.toc-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 20px}
+.openall{border:1px solid var(--ink);background:#fff;border-radius:999px;padding:9px 16px;font-weight:800;font-size:13px;cursor:pointer}
+.openall:hover{background:var(--ink);color:#fff}
+.grp{margin-top:22px}
+.grp-t{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.grp-t h3{font-size:clamp(18px,4.8vw,22px);font-weight:900;letter-spacing:-.01em}
+.grp-t span{font-size:13px;color:var(--ink-2);font-weight:600}
+.items{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+@media (min-width:860px){.items{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}}
+.it{display:grid;grid-template-columns:86px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.it > img{width:86px;height:auto;border-radius:6px;box-shadow:0 1px 0 var(--line),0 8px 18px rgba(18,26,38,.14)}
+.it .meta{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.it .meta i{font-style:normal;color:var(--mute);font-weight:700}
+.it h4{margin:3px 0 4px;font-size:15.5px;font-weight:800;line-height:1.25}
+.it p{font-size:13.5px;color:var(--ink-2);line-height:1.45}
+.it details{margin-top:8px}
+.it summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;color:var(--ink);border-bottom:1px dashed var(--mute);padding-bottom:1px}
+.it summary::-webkit-details-marker{display:none}
+.it summary::after{content:"+";font-size:16px;line-height:1;color:var(--red);transition:transform .25s var(--ease)}
+.it details[open] summary::after{transform:rotate(45deg)}
+.it ol{margin-top:8px;padding-left:20px;display:grid;gap:3px;font-size:13.5px;color:var(--ink);line-height:1.4}
+.it ol li::marker{color:var(--red);font-weight:800;font-size:12px}
+.badge{display:inline-block;margin-left:6px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--amber);border-radius:6px;padding:2px 6px;vertical-align:2px}
+
+/* ВИДЕО */
+.vids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+@media (min-width:820px){.vids{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.vd{border-radius:18px;overflow:hidden;background:var(--navy);color:#fff;display:grid;grid-template-rows:auto 1fr}
+.vd .ph{position:relative;aspect-ratio:1/1;background:#0A1320 center/cover no-repeat}
+.vd .ph::after{content:"";position:absolute;left:12px;bottom:12px;width:40px;height:40px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M8 5v14l11-7z'/%3E%3C/svg%3E") 55% 50%/20px no-repeat;box-shadow:0 8px 20px rgba(224,58,62,.45)}
+.vd .tx{padding:12px 12px 14px}
+.vd b{display:block;font-size:14px;font-weight:800;line-height:1.25}
+.vd span{display:block;margin-top:4px;font-size:12px;color:#B9C6DA;line-height:1.35}
+.vd.more .ph{display:grid;place-items:center;background:var(--navy-3)}
+.vd.more .ph::after{display:none}
+.vd.more .ph b{font-family:var(--num);font-size:56px;font-weight:600;color:var(--amber)}
+
+/* СИТУАЦИЯ → МАТЕРИАЛ */
+.find{display:grid;gap:8px;margin-top:14px}
+@media (min-width:820px){.find{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.fd{border:1px solid var(--line);border-radius:16px;padding:14px;display:grid;gap:6px;background:#fff}
+.fd b{font-size:15px;line-height:1.3}
+.fd span{font-size:13px;color:var(--ink-2)}
+.fd span em{font-style:normal;font-weight:800;color:var(--ink);background:var(--sand);border-radius:6px;padding:1px 6px;white-space:nowrap}
+
+/* КОМУ */
+.fit{display:grid;gap:10px;margin-top:14px}
+@media (min-width:820px){.fit{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}
+.fit > div{border-radius:22px;padding:18px}
+.fit .yes{background:var(--sand)}
+.fit .no{background:#fff;border:1px solid var(--line)}
+.fit h3{font-size:16px;font-weight:900;margin-bottom:12px}
+.fit ul{list-style:none;padding:0;display:grid;gap:12px}
+.fit li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;font-size:14.5px;line-height:1.4}
+.fit li::before{content:"✓";width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900;background:var(--red);color:#fff}
+.fit li b{display:block}
+.fit li span{color:var(--ink-2);font-size:13.5px}
+.fit .no li::before{content:"✕";background:var(--sand-2);color:var(--ink-2)}
 
 /* АВТОР */
-.author{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:center;background:var(--cloud);border-radius:20px;padding:16px}
-.author img{width:84px;height:84px;border-radius:18px;object-fit:cover;object-position:35% 30%}
-.author b{display:block;font-size:16px;font-weight:800;line-height:1.25}
-.author span{display:block;font-size:13px;color:var(--ink-2);margin-top:3px}
-.author a{display:inline-block;margin-top:6px;font-size:13px;font-weight:700;color:var(--blue);text-decoration:none}
+.author{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:center;background:var(--navy);color:#fff;border-radius:24px;padding:18px}
+.author img{width:96px;height:96px;border-radius:20px;object-fit:cover;object-position:35% 30%}
+.author b{display:block;font-size:17px;font-weight:900;line-height:1.25}
+.author span{display:block;font-size:13.5px;color:#C9D4E6;margin-top:4px}
+.author a{display:inline-block;margin-top:8px;font-size:13px;font-weight:800;color:var(--amber);text-decoration:none}
 
 /* ЦЕНА */
-.buy{margin-top:30px;background:var(--blue-d);color:#fff}
-.buy .wrap{padding-block:28px 32px;display:grid;gap:16px}
-@media (min-width:860px){.buy .wrap{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:30px}}
-.buy h2{font-size:clamp(21px,5.6vw,28px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
-.buy ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
-.buy li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:6px;font-size:14.5px;color:#D6E0FA}
-.buy li::before{content:"✓";color:var(--orange);font-weight:800}
-.pbox{display:grid;gap:10px;justify-items:start}
-@media (min-width:860px){.pbox{justify-items:end;text-align:right}}
-.pbox strong{font-size:clamp(40px,11vw,54px);font-weight:800;letter-spacing:-.03em;line-height:1}
-.pbox .kz{font-size:16px;font-weight:700;color:#C7D3F2}
-.pbox .worth{font-size:13px;color:#FCD34D;font-weight:600}
-.pbox .after{font-size:12.5px;color:#AFC0EA;max-width:24em}
-.ask{font-size:13px;color:#C7D3F2;text-decoration:none;border-bottom:1px dashed rgba(199,211,242,.5)}
+.buy{margin-top:44px;background:var(--navy);color:#fff}
+.buy .wrap{padding-block:34px 38px;display:grid;gap:22px}
+@media (min-width:900px){.buy .wrap{grid-template-columns:minmax(0,1fr) 360px;align-items:center;gap:40px}}
+.buy h2{font-size:clamp(23px,6vw,34px);font-weight:900;letter-spacing:-.02em;line-height:1.1}
+.buy ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.buy li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:6px;font-size:14.5px;color:#D3DCEA}
+.buy li::before{content:"✓";color:var(--amber);font-weight:900}
+.buy li b{color:#fff}
+.pbox{background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:20px;display:grid;gap:10px;justify-items:start}
+.pbox .old{font-size:14px;color:#8C9AB2;font-weight:700}
+.pbox strong{font-family:var(--num);font-size:clamp(50px,13vw,64px);font-weight:600;line-height:.95}
+.pbox .kz{font-size:17px;font-weight:800;color:#D3DCEA}
+.pbox .per{font-size:13px;color:var(--amber);font-weight:700}
+.pbox .wa{width:100%}
+.pbox .after{font-size:12.5px;color:#9FB0C8}
+.ask{font-size:13px;color:#C9D4E6;text-decoration:none;border-bottom:1px dashed rgba(201,212,230,.5)}
 
 /* FAQ */
 .faq details{border-top:1px solid var(--line)}
 .faq details:last-child{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;padding:13px 32px 13px 0;font-weight:700;position:relative;font-size:14.5px}
+.faq summary{list-style:none;cursor:pointer;padding:14px 32px 14px 0;font-weight:800;position:relative;font-size:15px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:2px;top:8px;font-weight:500;font-size:22px;color:var(--blue);transition:transform .3s var(--ease)}
+.faq summary::after{content:"+";position:absolute;right:2px;top:9px;font-weight:500;font-size:22px;color:var(--red);transition:transform .3s var(--ease)}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding:0 0 13px;font-size:14px;color:var(--ink-2)}
-.foot{padding-block:18px 92px;font-size:11.5px;color:var(--mute);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-@media (min-width:860px){.foot{padding-bottom:18px}}
+.faq details p{padding:0 0 14px;font-size:14px;color:var(--ink-2)}
+.foot{padding-block:20px 96px;font-size:11.5px;color:var(--mute);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+@media (min-width:900px){.foot{padding-bottom:20px}}
 
 /* нижняя кнопка на телефоне */
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));transform:translateY(120%);transition:transform .35s var(--ease)}
 .dock.show{transform:none}
-.dock .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:10px;background:rgba(11,29,74,.95);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:999px;padding:7px 7px 7px 18px;color:#fff;box-shadow:0 12px 30px rgba(7,20,51,.35)}
-.dock p{flex:1;min-width:0;font-size:15px;font-weight:800;line-height:1.15}
-.dock p span{display:block;font-size:11px;font-weight:500;color:#AFC0EA}
-.dock .wa{min-height:42px;padding:0 16px;font-size:14px;box-shadow:none}
-@media (min-width:860px){.dock{display:none}}
+.dock .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:10px;background:rgba(14,27,44,.95);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:999px;padding:7px 7px 7px 18px;color:#fff;box-shadow:0 12px 30px rgba(14,27,44,.35)}
+.dock p{flex:1;min-width:0;font-size:16px;font-weight:800;line-height:1.15}
+.dock p span{display:block;font-size:11px;font-weight:500;color:#9FB0C8}
+.dock .wa{min-height:44px;padding:0 18px;font-size:14px;box-shadow:none}
+@media (min-width:900px){.dock{display:none}}
 
 /* просмотр страниц */
-.lb{position:fixed;inset:0;z-index:60;background:rgba(7,20,51,.95);display:grid;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) 10px calc(70px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s}
-.lb img{max-width:min(100%,640px);max-height:100%;border-radius:8px;background:#fff}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,19,32,.95);display:grid;place-items:center;padding:calc(56px + env(safe-area-inset-top,0px)) 10px calc(70px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s}
+.lb img{max-width:min(100%,1100px);max-height:100%;border-radius:8px;background:#fff}
 .lb button{position:absolute;border:0;border-radius:50%;width:46px;height:46px;background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer}
 .lb .lx{top:calc(12px + env(safe-area-inset-top,0px));right:14px}
 .lb .lp{left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 .lb .ln{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
-.lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#C7D3F2;font-size:13px;font-weight:600;text-align:center;max-width:60%}
+.lb .lc{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(26px + env(safe-area-inset-bottom,0px));color:#C9D4E6;font-size:13px;font-weight:600;text-align:center;max-width:60%}
 
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .hero-in > *{animation:up .6s var(--ease) both}
-.hero-in > *:nth-child(2){animation-delay:.05s}.hero-in > *:nth-child(3){animation-delay:.1s}.hero-in > *:nth-child(4){animation-delay:.15s}.hero-in > *:nth-child(5){animation-delay:.2s}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+.hero-in > *:nth-child(2){animation-delay:.05s}.hero-in > *:nth-child(3){animation-delay:.1s}.hero-in > *:nth-child(4){animation-delay:.15s}.hero-in > *:nth-child(5){animation-delay:.2s}.hero-in > *:nth-child(6){animation-delay:.25s}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.shelf{overflow-x:auto}}
 </style>
 </head>
 <body>
@@ -178,75 +262,191 @@ h1 em{font-style:normal;color:#8FB0FF}
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="wrap top">
-    <span class="brand">ENDO <i>GUIDES</i></span>
-    <a href="#buy">5 000 ₽ · 27 000 ₸</a>
+    <span class="brand">ENDO <i>LIBRARY</i></span>
+    <a href="#buy">3 990 ₽ · 21 500 ₸</a>
   </div>
   <div class="wrap hero-in">
-    <span class="tag">Для стоматологов-терапевтов</span>
-    <h1>Отломился файл, не&nbsp;берёт анестезия, болит после лечения? <em>Открыл гайд — сделал по шагам.</em></h1>
-    <p class="sub">14 гайдов по эндодонтии у кресла: алгоритмы, протоколы и готовые фразы для пациента. 132 страницы.</p>
+    <span class="tag">Для стоматологов-терапевтов и эндодонтистов</span>
+    <h1>Вся эндодонтия у&nbsp;кресла <em>в&nbsp;одной папке</em></h1>
+    <p class="sub">Протоколы, карты, алгоритмы, разборы кейсов и готовые фразы для пациента от эндодонтиста, который лечит под микроскопом. Открыли нужный файл и сделали по шагам.</p>
+    <div class="counts">
+      <div><b>23</b><span>PDF-материала</span></div>
+      <div><b>321</b><span>страница схем и протоколов</span></div>
+      <div><b>4</b><span>видео</span></div>
+    </div>
+    <div class="buyrow">
+      <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
+      <span class="price"><s>5 000 ₽</s> вся папка<b>3 990 ₽</b>или 21 500 ₸</span>
+    </div>
     <div class="doc">
       <img src="img/doctor.webp" alt="Шынгыс Нургалиевич Курбанбек" width="640" height="640">
       <div><b>Шынгыс Нургалиевич Курбанбек</b><span>Эндодонтист, терапевт, микрохирург, пародонтолог · 9 лет практики</span></div>
     </div>
-    <div class="buyrow">
-      <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
-      <span class="price">вся папка<b>5 000 ₽</b>или 27 000 ₸</span>
-    </div>
-    <a class="ghost" href="#peek">Посмотреть страницы гайдов</a>
+    <a class="ghost" href="#parts">Смотреть, что внутри</a>
   </div>
 </header>
 
+<!-- ЛЕНТА ОБЛОЖЕК -->
+<div class="shelf" aria-label="Обложки всех материалов папки">
+  <div class="shelf-row" id="shelf">
+    <img src="img/v2/cv/n_ustya.webp" alt="Устья корневых каналов" height="160">
+    <img src="img/v2/cv/o01.webp" alt="Осложнения в эндо" height="160">
+    <img src="img/v2/cv/n_bolit.webp" alt="Почему зуб болит после препарирования" height="160">
+    <img src="img/v2/cv/o02.webp" alt="Анатомия каналов по каждому зубу" height="160">
+    <img src="img/v2/cv/n_stepback.webp" alt="Step-back" height="160">
+    <img src="img/v2/cv/o04.webp" alt="Анестезия, которая не берёт" height="160">
+    <img src="img/v2/cv/n_sinus.webp" alt="Одонтогенный синусит" height="160">
+    <img src="img/v2/cv/o05.webp" alt="Протокол ирригации" height="160">
+    <img src="img/v2/cv/n_edta.webp" alt="ЭДТА и смазанный слой" height="160">
+    <img src="img/v2/cv/o07.webp" alt="Обтурация" height="160">
+    <img src="img/v2/cv/n_vertucci.webp" alt="Вертуччи II" height="160">
+    <img src="img/v2/cv/o12.webp" alt="Боль после лечения" height="160">
+    <img src="img/v2/cv/n_anatomiya_zhev.webp" alt="Анатомия жевательных зубов" height="160">
+    <img src="img/v2/cv/o08.webp" alt="Перелечивание" height="160">
+    <img src="img/v2/cv/n_sloy.webp" alt="Послойная реставрация" height="160">
+    <img src="img/v2/cv/o14.webp" alt="Консультация и цена" height="160">
+    <img src="img/v2/cv/n_stupenka.webp" alt="Ступенька в изогнутом канале" height="160">
+    <img src="img/v2/cv/o09.webp" alt="Витальные методы" height="160">
+    <img src="img/v2/cv/o03.webp" alt="Диагностика" height="160">
+    <img src="img/v2/cv/o06.webp" alt="Файловые системы" height="160">
+    <img src="img/v2/cv/o10.webp" alt="Восстановление после эндо" height="160">
+    <img src="img/v2/cv/o11.webp" alt="Повязки и временные пломбы" height="160">
+    <img src="img/v2/cv/o13.webp" alt="Коффердам" height="160">
+  </div>
+  <p class="shelf-cap">Это обложки всех 23 PDF из папки. Ниже разобран каждый</p>
+</div>
+
 <main>
-  <!-- СИТУАЦИИ -->
-  <section class="wrap sec">
-    <p class="eyebrow">Узнаёте себя?</p>
-    <h2 class="h2">6 ситуаций, где гайд экономит время и нервы</h2>
-    <div class="cases">
-      <div class="case"><i>01</i><div><b>Отломился файл или перфорация</b><span>Алгоритм «стоп, оценить, задокументировать, сообщить», карта осложнений: срочность и <em>когда направлять</em>.</span></div></div>
-      <div class="case"><i>04</i><div><b>«Горячий» моляр, анестезия не берёт</b><span>Почему блок не работает, <em>дополнительные техники по шагам</em> и расчёт доз по весу.</span></div></div>
-      <div class="case"><i>02</i><div><b>Не нашли MB2 или «лишний» канал</b><span>Карточка на каждый зуб: сколько каналов, <em>где искать устья</em>, типичные ошибки.</span></div></div>
-      <div class="case"><i>12</i><div><b>Пациент звонит с болью на следующий день</b><span>Что норма, а что обострение, что назначить и <em>готовые фразы</em>, после которых нет паники.</span></div></div>
-      <div class="case"><i>08</i><div><b>Перелечивать, оперировать или удалять</b><span>Критерии выбора, распломбировка гуттаперчи, штифтов и <em>резорцин-формалина</em>.</span></div></div>
-      <div class="case"><i>14</i><div><b>Пациент: «дорого, лучше удалить»</b><span>Консультация в 7 этапов: <em>как назвать цену</em>, чтобы пациент выбрал лечение.</span></div></div>
+  <!-- СОСТАВ -->
+  <section class="wrap sec" id="parts">
+    <span class="eyebrow">Из чего состоит папка</span>
+    <h2 class="h2">Три части: гайды у кресла, глубокие разборы и видео</h2>
+    <div class="parts">
+      <div class="part"><small>Часть 1</small><b class="n">14</b><h3>Гайдов у кресла · 167 страниц</h3><p>Короткие рабочие протоколы: одна ситуация, один гайд. Осложнения, анатомия каналов, диагностика, анестезия, ирригация, файлы, обтурация, перелечивание, витальные методы, реставрация, повязки, боль, коффердам, консультация.</p></div>
+      <div class="part dark"><small>Часть 2</small><b class="n">9</b><h3>Глубоких разборов · 154 страницы</h3><p>Большие материалы со ссылками на исследования: устья и MB2, step-back по шагам, ЭДТА и смазанный слой, боль после препарирования, одонтогенный синусит, разборы кейсов, курс анатомии жевательных зубов.</p></div>
+      <div class="part red"><small>Часть 3</small><b class="n">4</b><h3>Видео</h3><p>Анимации о том, как развиваются пульпит и периодонтит, step-back в формате reels с субтитрами и ещё один ролик. Удобно показать пациенту на консультации.</p></div>
+    </div>
+    <div class="value">
+      <span><b>≈12 ₽</b> за страницу</span>
+      <span><b>173 ₽</b> за материал</span>
+      <span>PDF: открыть с телефона или распечатать</span>
     </div>
   </section>
 
   <!-- НАСТОЯЩИЕ СТРАНИЦЫ -->
   <section class="wrap sec" id="peek">
-    <p class="eyebrow">Загляните внутрь</p>
-    <h2 class="h2">Настоящие страницы. Листайте, нажмите, чтобы увеличить</h2>
+    <span class="eyebrow">Загляните внутрь</span>
+    <h2 class="h2">Настоящие страницы из папки</h2>
+    <p class="lead">Листайте вбок, нажмите, чтобы рассмотреть крупно.</p>
     <div class="peek" id="peekRow">
-      <button class="pk" type="button"><span><img src="img/show/complications.webp" alt="Страница: карта осложнений в эндо" width="800" height="1131"></span><b>Осложнения в эндо</b><small>карта: срочность и куда направлять</small></button>
-      <button class="pk" type="button"><span><img src="img/show/irrigation.webp" alt="Страница: протокол ирригации на одной странице" width="800" height="1131" loading="lazy"></span><b>Протокол ирригации</b><small>постер на стену у кресла</small></button>
-      <button class="pk" type="button"><span><img src="img/show/pain.webp" alt="Страница: нормальная боль после лечения" width="800" height="1131" loading="lazy"></span><b>Боль после лечения</b><small>норма, обострение и что сказать</small></button>
-      <button class="pk" type="button"><span><img src="img/show/anatomy.webp" alt="Страница: анатомия каналов" width="800" height="1131" loading="lazy"></span><b>Анатомия каналов</b><small>карточка на каждый зуб</small></button>
-      <button class="pk" type="button"><span><img src="img/show/consult.webp" alt="Страница: консультация в 7 этапов" width="800" height="1131" loading="lazy"></span><b>Консультация и цена</b><small>7 этапов до «да»</small></button>
+      <button class="pk" type="button" style="--r:1.778"><span><img src="img/v2/show/ustya-mb2.webp" alt="Страница: MB2 в зубе 16, где именно его искать" width="1200" height="675"></span><b>Устья каналов</b><small>MB2 в 16: где именно искать</small></button>
+      <button class="pk" type="button" style="--r:1.778"><span><img src="img/v2/show/stepback-all.webp" alt="Страница: step-back от узкого канала до пломбы" width="1200" height="675" loading="lazy"></span><b>Step-back</b><small>весь процесс на одной картинке</small></button>
+      <button class="pk" type="button" style="--r:1.414"><span><img src="img/v2/show/anat-16.webp" alt="Страница: карточка верхних первых моляров" width="1200" height="849" loading="lazy"></span><b>Анатомия каналов</b><small>карточка на каждый зуб</small></button>
+      <button class="pk" type="button" style="--r:1.414"><span><img src="img/v2/show/compl-file.webp" alt="Страница: если отломился инструмент" width="1200" height="849" loading="lazy"></span><b>Осложнения</b><small>если отломился инструмент</small></button>
+      <button class="pk" type="button" style="--r:.707"><span><img src="img/v2/show/bolit-dry.webp" alt="Страница: пересушивание дентина" width="820" height="1160" loading="lazy"></span><b>Боль после препарирования</b><small>что делает пустер с одонтобластом</small></button>
+      <button class="pk" type="button" style="--r:1.414"><span><img src="img/v2/show/irrig-poster.webp" alt="Страница: протокол ирригации на одной странице" width="1200" height="849" loading="lazy"></span><b>Протокол ирригации</b><small>постер на стену у кресла</small></button>
+      <button class="pk" type="button" style="--r:1.778"><span><img src="img/v2/show/edta-proto.webp" alt="Страница: последовательность ирригации" width="1200" height="675" loading="lazy"></span><b>ЭДТА и смазанный слой</b><small>последовательность ирригации</small></button>
+      <button class="pk" type="button" style="--r:1.414"><span><img src="img/v2/show/pain-light.webp" alt="Страница: светофор норма, обострение, абсцесс" width="1200" height="849" loading="lazy"></span><b>Боль после лечения</b><small>светофор: норма, обострение, абсцесс</small></button>
+      <button class="pk" type="button" style="--r:.707"><span><img src="img/v2/show/sinus-algo.webp" alt="Страница: алгоритм при подозрении на одонтогенный синусит" width="820" height="1160" loading="lazy"></span><b>Одонтогенный синусит</b><small>алгоритм при подозрении</small></button>
+      <button class="pk" type="button" style="--r:.8"><span><img src="img/v2/show/vertucci.webp" alt="Страница: Вертуччи II, анатомия слияния каналов" width="820" height="1026" loading="lazy"></span><b>Разбор кейса</b><small>Вертуччи II: почему каналы сливаются</small></button>
+      <button class="pk" type="button" style="--r:1.778"><span><img src="img/v2/show/zhev-16.webp" alt="Страница: верхний первый моляр, бугры и корни" width="1200" height="675" loading="lazy"></span><b>Анатомия жевательных зубов</b><small>16/26: бугры, корни, каналы</small></button>
+      <button class="pk" type="button" style="--r:.8"><span><img src="img/v2/show/sloy.webp" alt="Страница: порции композита по 2 мм" width="820" height="1025" loading="lazy"></span><b>Схема «СЛОЙ»</b><small>порции ≤ 2 мм, косо, каждую засветить</small></button>
+      <button class="pk" type="button" style="--r:1.414"><span><img src="img/v2/show/consult.webp" alt="Страница: структура консультации в 7 этапов" width="1200" height="849" loading="lazy"></span><b>Консультация и цена</b><small>7 этапов до решения пациента</small></button>
     </div>
-    <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+    <div class="peeknav"><div class="dots" id="dots"></div><div class="arrows"><button type="button" id="pPrev" aria-label="Назад">‹</button><button type="button" id="pNext" aria-label="Вперёд">›</button></div></div>
   </section>
 
-  <!-- ВСЕ 14 -->
+  <!-- ВСЁ СОДЕРЖАНИЕ -->
+  <section class="wrap sec" id="toc">
+    <div class="toc-head">
+      <div><span class="eyebrow">Полное содержание</span><h2 class="h2">Что именно в каждом материале</h2></div>
+      <button class="openall" type="button" id="openAll">Раскрыть все разделы</button>
+    </div>
+
+    <div class="grp">
+      <div class="grp-t"><h3>Часть 1. 14 гайдов у кресла</h3><span>167 страниц · одна ситуация, один гайд</span></div>
+      <div class="items">
+        <div class="it"><img src="img/v2/cv/o01.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">01 <i>· 15 стр.</i></span><h4>Осложнения в эндо: что делать, если…</h4><p>Шесть ситуаций, которые случаются у каждого. Одна проблема, одна карточка: шаги, фраза пациенту, когда направлять.</p><details><summary>Что внутри · 8 разделов</summary><ol><li>Общий принцип: стоп, оценить, задокументировать, сообщить</li><li>Отломился инструмент: обход, извлечение, оставить</li><li>Перфорация дна и стенки</li><li>Образовалась ступенька</li><li>Потеряна рабочая длина</li><li>Гипохлоритная авария</li><li>Обострение между визитами</li><li>Чек-лист у кресла и проверь себя</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o02.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">02 <i>· 21 стр.</i></span><h4>Анатомия каналов по каждому зубу</h4><p>Карточка на каждую группу зубов: сколько каналов и с какой частотой, где MB2, C-образные каналы, форма доступа, ошибки.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Классификация Vertucci: типы I–VIII</li><li>Верхние резцы, клыки и премоляры</li><li>Верхние первые и вторые моляры, MB2</li><li>Нижние резцы, клыки и премоляры</li><li>Нижние моляры и C-образные каналы 37/47</li><li>Третьи моляры и сводная таблица «зуб, корни, каналы»</li><li>Чек-лист и проверь себя</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o03.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">03 <i>· 12 стр.</i></span><h4>Диагностика пульпитов и периодонтитов</h4><p>Диагноз по AAE и перевод в МКБ-10, порядок тестов, «болит, но непонятно какой зуб», снимки и КТ, лечить или удалять.</p><details><summary>Что внутри · 9 разделов</summary><ol><li>Диагноз из двух частей: пульпа + периапекс</li><li>Апикальные диагнозы и перевод в МКБ-10</li><li>Порядок тестов: контрольный зуб первым</li><li>Как читать ответ на холод и ЭОД</li><li>«Болит, но непонятно какой зуб»</li><li>Отражённая боль: что маскируется под зуб</li><li>Прицельный снимок, PAI и когда нужен КТ</li><li>Лечить или удалять: оценка прогноза</li><li>Чек-лист у кресла и проверь себя</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o04.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">04 <i>· 13 стр.</i></span><h4>Анестезия, которая не берёт</h4><p>«Горячий» нижний моляр при остром пульпите: почему блок не работает и что делать по шагам.</p><details><summary>Что внутри · 8 разделов</summary><ol><li>Почему анестезия не берёт</li><li>Цифры: как часто не берёт и что помогает</li><li>Алгоритм «горячего» нижнего моляра</li><li>Интралигаментарная анестезия</li><li>Внутрипульпарная анестезия</li><li>Максимальные дозы и расчёт карпул по весу</li><li>Осложнения: распознать и действовать</li><li>Что сказать пациенту</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o05.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">05 <i>· 11 стр.</i></span><h4>Протокол ирригации</h4><p>Концентрации, объёмы, последовательность, активация и время. Постер на одной странице для стены у кресла.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Ирригация: протокол на одной странице</li><li>Гипохлорит натрия: основной ирригант</li><li>EDTA, хлоргексидин, физраствор и спирт</li><li>Иглы: что и как подаёт раствор</li><li>Активация ирриганта</li><li>Что нельзя смешивать и как не навредить</li><li>Чек-лист у кресла и проверь себя</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o06.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">06 <i>· 10 стр.</i></span><h4>Шпаргалка по файловым системам</h4><p>Скорость и торк, ротация против реципрока, как не сломать инструмент в изогнутом канале.</p><details><summary>Что внутри · 8 разделов</summary><ol><li>NiTi: почему файл гнётся и не ломается</li><li>Два механизма поломки</li><li>Glide path: дорожка для машинного файла</li><li>Ротация против реципрока</li><li>Режимы популярных систем</li><li>Кривизна канала: угол и радиус</li><li>10 правил «как не сломать»</li><li>Чек-лист у мотора</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o07.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">07 <i>· 12 стр.</i></span><h4>Обтурация: какой метод когда</h4><p>Латеральная конденсация, горячая вертикальная и одноконусная техника с биокерамическим силером.</p><details><summary>Что внутри · 8 разделов</summary><ol><li>Когда канал готов к обтурации</li><li>Примерка мастер-конуса</li><li>Латеральная конденсация</li><li>Горячая вертикальная: continuous wave</li><li>Один конус + биокерамический силер</li><li>Когда что выбирать</li><li>Ошибки на снимке и контроль качества</li><li>Чек-лист у кресла и проверь себя</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o08.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">08 <i>· 12 стр.</i></span><h4>Перелечивание и распломбировка</h4><p>Когда перелечивать, а когда хирургия или удаление. Гуттаперча, штифты, резорцин-формалин и «старые» пасты.</p><details><summary>Что внутри · 9 разделов</summary><ol><li>Перелечить, оперировать или удалить</li><li>Подготовка: снимок, КТ, коронка, штифт</li><li>Удаление гуттаперчи: по третям, сверху вниз</li><li>Растворители, тепло и протокол</li><li>Резорцин-формалин и «старые» пасты</li><li>Стратегия: увеличение, ультразвук, терпение</li><li>Реалистичные ожидания и когда остановиться</li><li>Прогноз перелечивания</li><li>Чек-лист у кресла</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o09.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">09 <i>· 11 стр.</i></span><h4>Витальные методы: пульпотомия, MTA, Biodentine</h4><p>Когда пульпу взрослого зуба можно сохранить, включая необратимый пульпит. Гемостаз как главный критерий.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Спектр витальных методов: 5 уровней</li><li>Кому подходит: показания у взрослых</li><li>Гемостаз: главный интраоперационный критерий</li><li>Протокол пульпотомии пошагово</li><li>MTA, Biodentine и другие: что выбрать</li><li>Контроль и критерии успеха</li><li>Что сказать пациенту и проверь себя</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o10.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">10 <i>· 10 стр.</i></span><h4>Восстановление после эндо</h4><p>Штифт или нет, культя, накладка, эндокоронка или коронка. Решение за минуту по стенкам и ферулу.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Три принципа восстановления</li><li>Считаем стенки, выбираем реставрацию</li><li>Фронт и боковые: разная механика</li><li>Штифт: зачем, какой, какой длины</li><li>Онлей, оверлей, эндокоронка</li><li>Сроки: восстановить как можно скорее</li><li>Пациент, чек-лист, самопроверка</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o11.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">11 <i>· 10 стр.</i></span><h4>Межвизитные повязки и временные пломбы</h4><p>Один визит или два, гидроксид кальция без ошибок, как закрыть зуб между визитами.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Один визит или два: как решить</li><li>Гидроксид кальция: как он работает</li><li>Как правильно ввести Ca(OH)₂</li><li>Сколько держать и как полностью удалить</li><li>Чего не класть в канал и почему</li><li>Двойная временная пломба</li><li>Что сказать пациенту и чек-лист</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o12.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">12 <i>· 10 стр.</i></span><h4>Боль после лечения: что назначить и сказать</h4><p>Нормальная динамика боли, обезболивание, когда антибиотик нужен, светофор и готовые фразы.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Нормальная боль: сколько, когда, как долго</li><li>Факторы риска: кого предупредить особо</li><li>Обезболивание взрослым: ступенчатая схема</li><li>Антибиотики: только при системных признаках</li><li>Светофор: норма, обострение или абсцесс</li><li>Что сказать пациенту, чтобы он не паниковал</li><li>Памятка для пациента и чек-лист</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o13.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">13 <i>· 9 стр.</i></span><h4>Коффердам за 5 минут</h4><p>Подбор кламмеров, быстрая установка, сложные случаи и что сказать пациенту, который «не хочет эту резинку».</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Зачем коффердам в эндодонтии</li><li>Анатомия кламмера и правило 4 точек</li><li>Пробивка платка: где и какого размера</li><li>Установка за 5 минут: техника «всё вместе»</li><li>Три техники: когда какую</li><li>Типичные ошибки и как их исправить</li><li>Что сказать пациенту</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/o14.webp" alt="" width="86" height="61" loading="lazy"><div><span class="meta">14 <i>· 11 стр.</i></span><h4>Консультация, цена и возражения</h4><p>Как провести консультацию по эндолечению, назвать цену и ответить на «дорого» и «а можно просто удалить?».</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Структура консультации: 7 этапов</li><li>Эндолечение простыми словами</li><li>Варианты лечения и информированное согласие</li><li>Как озвучить цену</li><li>«Дорого» и «а можно просто удалить?»</li><li>«Подумаю», «дешевле», гарантия, боль</li><li>Чего не говорить и чек-лист</li></ol></details></div></div>
+      </div>
+    </div>
+
+    <div class="grp">
+      <div class="grp-t"><h3>Часть 2. 9 глубоких разборов</h3><span>154 страницы · с исследованиями и источниками</span></div>
+      <div class="items">
+        <div class="it"><img src="img/v2/cv/n_ustya.webp" alt="" width="86" height="48" loading="lazy"><div><span class="meta">Разбор <i>· 22 стр.</i></span><h4>Устья корневых каналов: где они и как найти каждое</h4><p>23% леченых моляров и премоляров имеют пропущенный канал. Как не оказаться в этой статистике.</p><details><summary>Что внутри · 10 разделов</summary><ol><li>Цена пропущенного устья и роль увеличения</li><li>Законы Краснера и Ранкова: камера, цвет, симметрия</li><li>Карта устьев верхней челюсти</li><li>Карта устьев нижней челюсти</li><li>Зуб 16: где именно искать MB2</li><li>Зубы 17, 36 и C-образный канал 37</li><li>Резцы и премоляры: где второе устье</li><li>Алгоритм поиска устьев в 6 шагов</li><li>Дентинная карта, подсказки под микроскопом, КЛКТ</li><li>Четыре способа потерять устье и чек-лист</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_stepback.webp" alt="" width="86" height="48" loading="lazy"><div><span class="meta">Разбор <i>· 27 стр.</i></span><h4>Step-back: шаг назад, который спасает канал</h4><p>Ротация сломалась, остались только К-файлы. Ручная техника от истории до клинического примера.</p><details><summary>Что внутри · 10 разделов</summary><ol><li>Суть за 10 секунд и словарик</li><li>Откуда техника и 5 задач Шилдера</li><li>Подготовка: четыре условия перед стартом</li><li>Фаза I: апикальная часть на полной длине</li><li>Фаза II: каждый файл на 1 мм короче</li><li>10 шагов в картинках, от IAF до пломбы</li><li>Математика конуса и Gates Glidden</li><li>Клинический пример: WL = 21 мм</li><li>Шесть типичных ошибок, step-back против crown-down</li><li>Зачем это в эпоху NiTi и чек-лист</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_edta.webp" alt="" width="86" height="48" loading="lazy"><div><span class="meta">Разбор <i>· 19 стр.</i></span><h4>ЭДТА и смазанный слой</h4><p>Промываем гипохлоритом 20 минут, почему стенки всё равно «грязные». Биохимия, патогенез и протокол.</p><details><summary>Что внутри · 9 разделов</summary><ol><li>Дентин как пористый биокомпозит</li><li>Смазанный слой: что это и три фракции</li><li>Как оставленный слой поддерживает инфекцию и боль</li><li>Биохимия гипохлорита и почему его мало</li><li>ЭДТА: хелатор и что он делает со стенкой</li><li>Что нельзя смешивать в канале</li><li>Главное правило: 1 минута, а не 10</li><li>Протокол последовательности, альтернативы, активация</li><li>Метаанализ 26 работ и шесть выводов</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_bolit.webp" alt="" width="86" height="122" loading="lazy"><div><span class="meta">Инфографика <i>· 20 стр.</i></span><h4>Почему зуб болит после препарирования</h4><p>Бор, пересушивание, перегрев и травма: что происходит в дентине, пульпе и нервах, и когда это норма.</p><details><summary>Что внутри · 9 разделов</summary><ol><li>Дентин, два типа нервных волокон, гидродинамика</li><li>Одонтобласт как датчик</li><li>Бор и глубина препарирования</li><li>Пересушивание пустером</li><li>Перегрев: порог 5,5 °C</li><li>Трещина или высокая пломба</li><li>Сенситизация: почему тёплое начинает болеть</li><li>Норма или пульпит: схема для звонка пациента</li><li>Протокол «как не допустить» и 30+ источников</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_anatomiya_zhev.webp" alt="" width="86" height="48" loading="lazy"><div><span class="meta">Курс с нуля <i>· 23 стр.</i></span><h4>Анатомия жевательных зубов</h4><p>Каждый бугор, его функция и то, как зубы на самом деле жуют. От терминов до реставрации.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Основы: словарь, нумерация FDI, как читать схему</li><li>Опорные и направляющие бугры, мнемоника BULL</li><li>Жевательный цикл и боковые движения</li><li>Премоляры 14, 15, 34, 35</li><li>Моляры 16, 17, 46, 47 и карта опорных бугров</li><li>Пять правил для реставрации</li><li>План на 4 недели и самопроверка</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_sinus.webp" alt="" width="86" height="122" loading="lazy"><div><span class="meta">Гайд <i>· 14 стр.</i></span><h4>Одонтогенный синусит</h4><p>Как развивается, как найти причинный зуб, что с ним делать и что написать ЛОР-врачу.</p><details><summary>Что внутри · 8 разделов</summary><ol><li>Почему это важно и анатомия</li><li>Как развивается: физиология, микробы, иммунитет</li><li>Чем отличается от обычного синусита</li><li>Одностороннее затемнение: не всё от зуба</li><li>Алгоритм при подозрении</li><li>Чек-лист диагностики стоматолога</li><li>Эндодонтия верхних моляров рядом с пазухой</li><li>Готовый текст письма ЛОР-врачу</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_vertucci.webp" alt="" width="86" height="108" loading="lazy"><div><span class="meta">Разбор кейса <i>· 11 стр.</i></span><h4>Вертуччи II: ввёл в MB, вышло из ML</h4><p>Почему медиальные каналы сливаются, чем их пломбировать и когда биокерамика действительно выигрывает.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Что произошло в кейсе</li><li>Разгадка: тип Вертуччи II (2–1)</li><li>Это не редкость: частота в медиальном корне</li><li>Механика: почему каналы сливаются</li><li>Гуттаперча или биокерамика: исследования</li><li>4 причины выбрать биокерамику и честный нюанс</li><li>Чек-лист по медиальному корню</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_stupenka.webp" alt="" width="86" height="108" loading="lazy"><div><span class="meta">Разбор <i>· 10 стр.</i></span><h4>Ступенька в изогнутом канале</h4><p>Причины, признаки, пошаговый обход, профилактика и как измерить изгиб.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Что это и как часто</li><li>Где она образуется</li><li>7 причин ступеньки</li><li>Признаки, что вы уже на ступеньке</li><li>Обход пошагово и что делать после</li><li>5 правил для изогнутых каналов</li><li>Как измерить изгиб: угол и радиус</li></ol></details></div></div>
+        <div class="it"><img src="img/v2/cv/n_sloy.webp" alt="" width="86" height="107" loading="lazy"><div><span class="meta">Схема <i>· 8 стр.</i></span><h4>«СЛОЙ»: послойная реставрация жевательных зубов</h4><p>Как вносить композит, чтобы не было сколов, краевого окрашивания и боли при накусывании.</p><details><summary>Что внутри · 7 разделов</summary><ol><li>Почему не одной порцией: усадка</li><li>Изоляция и подготовка полости</li><li>Адгезивный протокол</li><li>Сначала стенка, потом полость</li><li>Порции ≤ 2 мм, косо, каждую засветить</li><li>Дентин, эмаль, бугор за бугром</li><li>Частые ошибки</li></ol></details></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВИДЕО -->
+  <section class="wrap sec" id="video">
+    <span class="eyebrow">Часть 3</span>
+    <h2 class="h2">4 видео в папке</h2>
+    <p class="lead">Анимированные ролики в стиле гайдов. Можно смотреть самому или показать пациенту, чтобы он понял, что происходит с зубом.</p>
+    <div class="vids">
+      <div class="vd"><div class="ph" style="background-image:url('img/v2/vid/pulpit.webp');background-position:22% 50%"></div><div class="tx"><b>Пульпит</b><span>Анимация на русском, горизонтальная</span></div></div>
+      <div class="vd"><div class="ph" style="background-image:url('img/v2/vid/period.webp')"></div><div class="tx"><b>Периодонтит</b><span>Анимация на казахском, вертикальная</span></div></div>
+      <div class="vd"><div class="ph" style="background-image:url('img/v2/vid/stepback.webp')"></div><div class="tx"><b>Step-back</b><span>Reels с субтитрами</span></div></div>
+      <div class="vd more"><div class="ph"><b>+1</b></div><div class="tx"><b>И ещё один ролик</b><span>Тоже лежит в папке</span></div></div>
+    </div>
+  </section>
+
+  <!-- СИТУАЦИЯ → МАТЕРИАЛ -->
   <section class="wrap sec">
-    <p class="eyebrow">Что в папке</p>
-    <h2 class="h2">14 гайдов, 132 страницы</h2>
-    <ul class="list">
-      <li><i>01</i><span>Осложнения в эндо</span><small>9 стр.</small></li>
-      <li><i>02</i><span>Анатомия каналов по каждому зубу</span><small>19 стр.</small></li>
-      <li><i>03</i><span>Диагностика пульпитов и периодонтитов</span><small>10 стр.</small></li>
-      <li><i>04</i><span>Анестезия, которая не берёт</span><small>9 стр.</small></li>
-      <li><i>05</i><span>Протокол ирригации</span><small>8 стр.</small></li>
-      <li><i>06</i><span>Шпаргалка по файловым системам</span><small>9 стр.</small></li>
-      <li><i>07</i><span>Обтурация: какой метод когда</span><small>9 стр.</small></li>
-      <li><i>08</i><span>Перелечивание и распломбировка</span><small>10 стр.</small></li>
-      <li><i>09</i><span>Витальные методы: пульпотомия, MTA</span><small>9 стр.</small></li>
-      <li><i>10</i><span>Восстановление после эндо</span><small>8 стр.</small></li>
-      <li><i>11</i><span>Повязки и временные пломбы</span><small>8 стр.</small></li>
-      <li><i>12</i><span>Боль после лечения</span><small>8 стр.</small></li>
-      <li><i>13</i><span>Коффердам за 5 минут</span><small>8 стр.</small></li>
-      <li><i>14</i><span>Консультация, цена и возражения</span><small>8 стр.</small></li>
-    </ul>
-    <p class="listnote">Опора на классификацию AAE, рекомендации ESE и систематические обзоры. Формат A4: распечатать и держать у кресла или открыть с телефона.</p>
+    <span class="eyebrow">Как пользоваться</span>
+    <h2 class="h2">Случилось у кресла: какой файл открыть</h2>
+    <div class="find">
+      <div class="fd"><b>Не нашли MB2 или «лишний» канал</b><span>Открыть <em>Устья каналов</em> и <em>Анатомия каналов</em></span></div>
+      <div class="fd"><b>Отломился файл, перфорация, ступенька</b><span>Открыть <em>Осложнения в эндо</em> и <em>Ступенька</em></span></div>
+      <div class="fd"><b>Мотор сломался, остались К-файлы</b><span>Открыть <em>Step-back</em></span></div>
+      <div class="fd"><b>«Горячий» моляр, анестезия не берёт</b><span>Открыть <em>Анестезия, которая не берёт</em></span></div>
+      <div class="fd"><b>Пациент звонит с болью на следующий день</b><span>Открыть <em>Боль после лечения</em> и <em>Почему зуб болит</em></span></div>
+      <div class="fd"><b>Односторонний синусит у пациента с леченым 16 или 26</b><span>Открыть <em>Одонтогенный синусит</em></span></div>
+      <div class="fd"><b>Силер вышел из соседнего канала</b><span>Открыть <em>Вертуччи II</em></span></div>
+      <div class="fd"><b>Сколы и боль при накусывании после реставрации</b><span>Открыть <em>«СЛОЙ»</em> и <em>Восстановление после эндо</em></span></div>
+      <div class="fd"><b>Пациент: «дорого, лучше удалить»</b><span>Открыть <em>Консультация, цена и возражения</em></span></div>
+      <div class="fd"><b>Перелечивать, оперировать или удалять</b><span>Открыть <em>Перелечивание</em> и <em>Диагностика</em></span></div>
+    </div>
+  </section>
+
+  <!-- КОМУ -->
+  <section class="wrap sec" id="fit">
+    <span class="eyebrow">Кому подойдёт</span>
+    <h2 class="h2">Папка для вас, если вы…</h2>
+    <div class="fit">
+      <div class="yes"><h3>Подойдёт</h3><ul>
+        <li><div><b>Терапевт, который лечит каналы</b><span>Алгоритм на каждую частую ситуацию: осложнения, анестезия, боль, перелечивание.</span></div></li>
+        <li><div><b>Начинающий эндодонтист или ординатор</b><span>Анатомия, устья, step-back, ирригация и обтурация по шагам, со ссылками на исследования.</span></div></li>
+        <li><div><b>Опытный врач</b><span>Всё собрано в одном месте: свежие данные, разборы кейсов, готовые фразы для пациента и консультации.</span></div></li>
+        <li><div><b>Главный врач или руководитель клиники</b><span>Готовая база, чтобы обучать молодых врачей и ввести единые протоколы.</span></div></li>
+        <li><div><b>Студент старших курсов</b><span>Курс анатомии жевательных зубов с нуля, словарики и схемы, которые легко запомнить.</span></div></li>
+      </ul></div>
+      <div class="no"><h3>Не подойдёт</h3><ul>
+        <li><div><b>Пациентам</b><span>Это профессиональные материалы для врачей.</span></div></li>
+        <li><div><b>Тем, кто ищет видеокурс с куратором</b><span>Это библиотека PDF и видео без обратной связи и домашних заданий.</span></div></li>
+      </ul></div>
+    </div>
   </section>
 
   <!-- АВТОР -->
@@ -261,35 +461,42 @@ h1 em{font-style:normal;color:#8FB0FF}
   <section class="buy" id="buy">
     <div class="wrap">
       <div>
-        <h2>Вся папка: 14 гайдов по эндодонтии</h2>
+        <span class="eyebrow" style="color:var(--amber)">Вся папка целиком</span>
+        <h2 style="margin-top:8px">23 PDF-материала, 321 страница и 4 видео за одну оплату</h2>
         <ul>
-          <li>132 страницы алгоритмов, протоколов и схем</li>
-          <li>Готовые фразы для пациента: осложнения, боль, цена</li>
-          <li>PDF A4: распечатать или открыть с телефона</li>
+          <li><span><b>14 гайдов у кресла:</b> осложнения, анатомия, диагностика, анестезия, ирригация, файлы, обтурация, перелечивание, витальные методы, реставрация, повязки, боль, коффердам, консультация</span></li>
+          <li><span><b>9 глубоких разборов:</b> устья и MB2, step-back, ЭДТА, боль после препарирования, синусит, Вертуччи II, ступенька, «СЛОЙ», курс анатомии жевательных зубов</span></li>
+          <li><span><b>4 видео:</b> пульпит, периодонтит, step-back и ещё один ролик</span></li>
+          <li><span>Готовые фразы для пациента: осложнения, боль, цена, «лучше удалить»</span></li>
+          <li><span>Доступ к папке на Google Drive: с телефона, компьютера или на печать</span></li>
         </ul>
       </div>
       <div class="pbox">
-        <strong>5 000 ₽</strong>
-        <span class="kz">или 27 000 ₸</span>
-        <span class="worth">Окупится первым пациентом, который выберет лечение вместо удаления</span>
+        <span class="old">Было <s>5 000 ₽ · 27 000 ₸</s></span>
+        <strong>3 990 ₽</strong>
+        <span class="kz">или 21 500 ₸</span>
+        <span class="per">≈12 ₽ за страницу · 173 ₽ за материал</span>
         <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.3.1.2.1.8-.1 1.4z"/></svg>Купить в WhatsApp</a>
-        <p class="after">После оплаты пришлём ссылку на папку на Google Drive.</p>
+        <p class="after">Напишите в WhatsApp, оплатите в рублях или тенге, и вам пришлют ссылку на папку.</p>
         <a class="ask" data-wa="ask" href="https://wa.me/77761611678" target="_blank" rel="noopener">Есть вопрос? Напишите врачу</a>
       </div>
     </div>
   </section>
 
   <section class="wrap sec faq">
-    <details><summary>Подойдёт, если я не эндодонтист?</summary><p>Да. Гайды написаны для стоматологов-терапевтов и начинающих эндодонтистов: что делать в конкретной ситуации, без лишней теории.</p></details>
-    <details><summary>Мне хватает опыта. Зачем?</summary><p>Чтобы не держать всё в голове: протоколы, дозы, карта осложнений и фразы для пациента собраны в одном месте у кресла.</p></details>
-    <details><summary>Как получить папку?</summary><p>Нажмите «Купить в WhatsApp», оплатите в рублях или тенге, и вам пришлют ссылку на папку на Google Drive.</p></details>
+    <h2 class="h2" style="font-size:clamp(20px,5vw,26px)">Вопросы</h2>
+    <details><summary>Подойдёт, если я не эндодонтист?</summary><p>Да. Гайды написаны для стоматологов-терапевтов и начинающих эндодонтистов: что делать в конкретной ситуации, без лишней теории. Глубокие разборы пригодятся, когда захотите понять, почему протокол именно такой.</p></details>
+    <details><summary>Мне хватает опыта. Зачем?</summary><p>Чтобы не держать всё в голове: протоколы, дозы, карты устьев, фразы для пациента и данные исследований собраны в одном месте у кресла.</p></details>
+    <details><summary>В каком формате материалы?</summary><p>PDF и видео в папке на Google Drive. Открываются с телефона и компьютера, гайды можно распечатать и держать у кресла.</p></details>
+    <details><summary>На каком языке?</summary><p>Все PDF на русском. Одно из видео, про периодонтит, на казахском.</p></details>
+    <details><summary>Как получить папку?</summary><p>Нажмите «Купить в WhatsApp», оплатите 3 990 ₽ или 21 500 ₸, и вам пришлют ссылку на папку на Google Drive.</p></details>
   </section>
   <footer class="wrap foot"><span>Шынгыс Нургалиевич Курбанбек · материалы для врачей</span><span>WhatsApp +7 776 161 16 78</span></footer>
 </main>
 
 <div class="dock" id="dock" aria-hidden="true">
   <div class="in">
-    <p>5 000 ₽<span>или 27 000 ₸ · 14 гайдов</span></p>
+    <p>3 990 ₽<span>или 21 500 ₸ · 23 PDF + 4 видео</span></p>
     <a class="wa" data-wa="buy" href="https://wa.me/77761611678" target="_blank" rel="noopener" tabindex="-1">Купить</a>
   </div>
 </div>
@@ -299,15 +506,24 @@ h1 em{font-style:normal;color:#8FB0FF}
 <script>
 (function(){
   /* WhatsApp: готовый текст сообщения */
-  var MSG={buy:'Здравствуйте! Хочу купить папку эндо-гайдов за 5 000 ₽ / 27 000 ₸',ask:'Здравствуйте! У меня вопрос по эндо-гайдам'};
+  var MSG={buy:'Здравствуйте! Хочу купить папку по эндодонтии за 3 990 ₽ / 21 500 ₸',ask:'Здравствуйте! У меня вопрос по папке по эндодонтии'};
   [].forEach.call(document.querySelectorAll('[data-wa]'),function(a){a.href='https://wa.me/77761611678?text='+encodeURIComponent(MSG[a.dataset.wa])});
 
+  /* лента обложек: дублируем для бесконечной прокрутки */
+  var shelf=document.getElementById('shelf');
+  if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    [].slice.call(shelf.children).forEach(function(im){var c=im.cloneNode();c.alt='';c.setAttribute('aria-hidden','true');shelf.appendChild(c)});
+  }
+
   /* лента настоящих страниц */
-  var row=document.getElementById('peekRow'),pks=[].slice.call(row.children),dots=[].slice.call(document.querySelectorAll('#dots i')),raf;
-  row.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){
-    var w=pks[0].getBoundingClientRect().width+12,i=Math.max(0,Math.min(pks.length-1,Math.round(row.scrollLeft/w)));
-    dots.forEach(function(d,k){d.classList.toggle('on',k===i)});
-  })},{passive:true});
+  var row=document.getElementById('peekRow'),pks=[].slice.call(row.children),dotsBox=document.getElementById('dots'),raf;
+  pks.forEach(function(){dotsBox.appendChild(document.createElement('i'))});
+  var dots=[].slice.call(dotsBox.children);dots[0].classList.add('on');
+  function curIdx(){var x=row.scrollLeft,best=0,bd=1e9;pks.forEach(function(p,i){var d=Math.abs(p.offsetLeft-row.offsetLeft-x);if(d<bd){bd=d;best=i}});return best}
+  row.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){var i=curIdx();dots.forEach(function(d,k){d.classList.toggle('on',k===i)})})},{passive:true});
+  function go(d){var i=Math.max(0,Math.min(pks.length-1,curIdx()+d));row.scrollTo({left:pks[i].offsetLeft-row.offsetLeft,behavior:'smooth'})}
+  document.getElementById('pPrev').addEventListener('click',function(){go(-1)});
+  document.getElementById('pNext').addEventListener('click',function(){go(1)});
 
   var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbC=document.getElementById('lbC'),cur=0;
   function show(){var im=pks[cur].querySelector('img');lbImg.src=im.src;lbImg.alt=im.alt;lbC.textContent=pks[cur].querySelector('b').textContent+' · '+(cur+1)+' / '+pks.length}
@@ -318,6 +534,10 @@ h1 em{font-style:normal;color:#8FB0FF}
   document.getElementById('lbN').addEventListener('click',function(){step(1)});
   lb.addEventListener('click',function(e){if(e.target===lb)lb.hidden=true});
   document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.hidden=true;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+
+  /* раскрыть все разделы содержания */
+  var openAll=document.getElementById('openAll'),dets=[].slice.call(document.querySelectorAll('#toc details')),opened=false;
+  openAll.addEventListener('click',function(){opened=!opened;dets.forEach(function(d){d.open=opened});openAll.textContent=opened?'Свернуть разделы':'Раскрыть все разделы'});
 
   var dock=document.getElementById('dock'),hero=document.getElementById('top'),buy=document.getElementById('buy');
   function onScroll(){
